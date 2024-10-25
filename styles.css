@@ -1,0 +1,271 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #fff8e1, #ffcc80);
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background: linear-gradient(135deg, #ff5722, #ff9800);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #ffcc80; /* Color change on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+.post {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth shadow transition */
+}
+
+.post:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.post h2 {
+    margin-top: 0;
+    color: #ff5722;
+    text-shadow: 1px 1px 5px rgba(255, 87, 34, 0.7);
+}
+
+.post-date {
+    color: #ffcc80;
+}
+
+.post p {
+    color: #444;
+    background-color: #ffe0b2;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.post p:hover {
+    background-color: rgba(255, 87, 34, 0.1);
+}
+
+.post ul li {
+    background-color: #ffcc80;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.post ul li:hover {
+    background-color: #ff9800;
+    color: white;
+}
+
+.read-more {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.read-more:hover {
+    background-color: #e64a19;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    animation: pulse 0.5s;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #222;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.comments {
+    margin-top: 20px;
+}
+
+.comment-submit {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.comment-submit:hover {
+    background-color: #e64a19;
+}
+
+/* List Styles */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #444;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .post {
+        padding: 15px;
+    }
+
+    .read-more {
+        width: 100%;
+    }
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode header {
+    background: linear-gradient(135deg, #ff3d00, #ff9800);
+}
+
+.dark-mode .post {
+    background: #444;
+}
+
+.dark-mode .post h2 {
+    color: #ff3d00;
+}
+
+.dark-mode .post-date {
+    color: #ffcc80;
+}
+
+.dark-mode .post p {
+    color: #e0e0e0;
+    background-color: #555;
+}
+
+.dark-mode .post ul li {
+    background-color: #666;
+}
+
+.dark-mode .post ul li:hover {
+    background-color: #ff3d00;
+}
+
+.dark-mode footer {
+    background: #222;
+}
+
+.dark-mode nav a {
+    color: #ffcc80;
+}
+
+.dark-mode ul {
+    color: #e0e0e0;
+}
+
+.dark-mode li {
+    margin-bottom: 10px;
+}
+
+.dark-mode li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.image-description {
+    background-color: rgba(255, 255, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s; /* Include transform transition */
+}
+
+.image-description:hover {
+    box-shadow: 0 0 15px rgba(255, 215, 0, 1);
+    transform: scale(1.03); /* Slightly increase size on hover */
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
